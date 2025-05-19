@@ -1,0 +1,110 @@
+header {
+    background-color:  rgb(166, 249, 50);
+    color: rgb(50, 43, 43);
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+}
+
+footer {
+    background-color: #8dfa93;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .social-icons a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #1da1f2; /* Cambia a un color más vistoso al pasar el mouse */
+  }
+
+  nav{
+    background-color: rgb(203, 249, 219);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
+  }
+
+  nav a {
+    color: rgb(55, 68, 63);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+
+}
+
+  nav a:hover {
+    background-color: rgb(166, 249, 50);
+    color: white;
+  }
+
+  h2 {
+    color: rgb(55, 68, 63);
+  }
+
+  h1 {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 5vw;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+
+section {
+    margin: 50px;
+}
+.grid-container {
+    display: grid;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    background-color: rgb(181, 250, 227);
+    padding: 10px;
+    align-content: start;
+  }
+  
+  .grid-container > div {
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+button {
+    background-color: #97f17e;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fbff00;
+    color: rgb(84, 90, 27);
+}
+
+.inciso {
+    border-color: #8dfa93;
+    text-align: center;
+    padding: 3px;
+    color: rgb(90, 126, 23);
+    font-size: medium;
+}
+ 
+

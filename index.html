@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Javascript</title>
+    <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Playwrite+AU+SA:wght@100..400&family=Rubik+Iso&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Segundo Desafio con Javascript</h1>
+    </header>
+    <nav>
+            <a href="#Ejer">Tabla de Ejercicios</a>
+            <a href="#Form6">Ejercicio 6</a>
+            <a href="#Form7">Ejercicio 7</a>
+            <a href="#Form8">Ejercicio 8</a>
+            <a href="#Form9">Ejercicio 9</a>
+            <a href="#Form10">Ejercicio 10</a>
+
+    </nav>
+    <section id="Ejer">
+        <h2>Tabla de Ejercicios</h2>
+        <p>A continución se presentan los ejercicios a resolver mediante el uso de formularios.</p>
+        <p>En la parte superior encontraras los ejercicios que puedes acceder.</p>
+        <center><img src="img\ejercicios javascript.jpg" alt=""></center>
+    </section>
+     <div class="grid-container">
+        <div id="Form6">
+            <section>
+            <h2>Ejercicio 6</h2>
+            <p>Definiendo la variable <b>z = </b>4.5, tenemos los siguientes <b>inciso (a) y (b)</b></p>
+            <img src="img\6a.jpg" alt=""> <br> <img src="img\6b.jpg" alt="">
+            
+             </section>
+        </div>
+        <div>
+            <section>
+                <h2>Solucion del ejercicio 6</h2>
+                <label for="">Introduce el inciso que deseas resolver (a o b):</label>
+                <input type="text" id="inciso" class="inciso"> <br> <br>
+                <button onclick="ejer6()">Click para el resultado</button>
+                <div id="resultado-container" style="margin-top: 20px; padding: 5px;    background-color: #e9ecef;    border-radius: 2px;    color: #333;    display: none;">
+                    <p>La respuesta es: <b><span id="res" style="color: blue;"></span></p></b>
+                </div>
+            </section>
+        </div>
+
+        <div id="Form7">
+            <section>
+            <h2>Ejercicio 7</h2>
+            <p>Definiendo la variable <b>t = </b>3.2, tenemos los siguientes <b>inciso (a) y (b)</b></p>
+            <img src="img\7a.jpg" alt=""> <br> <img src="img\7b.jpg" alt="">
+             </section>
+        </div>
+        <div>
+            <section>
+                <h2>Solucion del ejercicio 7</h2>
+                <label for="">Introduce el inciso que deseas resolver (a o b):</label>
+                <input type="text" id="inciso7" class="inciso"> <br> <br>
+                <button onclick="ejer7()">Click para el resultado</button>
+                <div id="resultado-container7" style="margin-top: 20px; padding: 5px;    background-color: #e9ecef;    border-radius: 2px;    color: #333;    display: none;">
+                    <p>La respuesta es: <b><span id="res7" style="color: blue;"></span></p></b>
+                </div>
+            </section>
+        </div>
+
+        <div id="Form8">
+            <section>
+            <h2>Ejercicio 8</h2>
+            <p>Definiendo las variables <b>x = </b>6.5 e <b>y = </b>3.8, tenemos los siguientes <b>inciso (a) y (b)</b></p>
+            <img src="img\8a.jpg" alt=""> <br> <img src="img\8b.jpg" alt="">
+             </section>
+        </div>
+        <div>
+            <section>
+                <h2>Solucion del ejercicio 8</h2>
+                <label for="">Introduce el inciso que deseas resolver (a o b):</label>
+                <input type="text" id="inciso8" class="inciso"> <br> <br>
+                <button onclick="ejer8()">Click para el resultado</button>
+                <div id="resultado-container8" style="margin-top: 20px; padding: 5px;    background-color: #e9ecef;    border-radius: 2px;    color: #333;    display: none;">
+                    <p>La respuesta es: <b><span id="res8" style="color: blue;"></span></p></b>
+                </div>
+            </section>
+        </div>
+
+        <div id="Form9">
+            <section>
+            <h2>Ejercicio 9</h2>
+            <p>Definiendo las variables <b>c = </b>4.6, <b>d = </b>1.7, <b>a = </b>cd^2 y <b>b =</b> (c+a)/(c-d), tenemos los siguientes <b>inciso (a) y (b)</b></p>
+            <img src="img\9a.jpg" alt=""> <br> <img src="img\9b.jpg" alt="">
+             </section>
+        </div>
+        <div>
+            <section>
+                <h2>Solucion del ejercicio 9</h2>
+                <label for="">Introduce el inciso que deseas resolver (a o b):</label>
+                <input type="text" id="inciso9" class="inciso"> <br> <br>
+                <button onclick="ejer9()">Click para el resultado</button>
+                <div id="resultado-container9" style="margin-top: 20px; padding: 5px;    background-color: #e9ecef;    border-radius: 2px;    color: #333;    display: none;">
+                    <p>La respuesta es: <b><span id="res9" style="color: blue;"></span></p></b>
+                </div>
+            </section>
+        </div>
+
+            <div id="Form10">
+            <section>
+            <h2>Ejercicio 10</h2>
+            <p>Para cada parte, verificar que la identidad es correcta calculando el lado derecho e izquierdo de la ecuacion, sustituyendo <b>x = </b>π/10, tenemos los siguientes <b>inciso (a) y (b)</b></p>
+            <img src="img\10a.jpg" alt=""> <br> <img src="img\10b.jpg" alt="">
+             </section>
+        </div>
+        <div>
+            <section>
+                <h2>Solucion del ejercicio 10</h2>
+                <label for="">Introduce el inciso que deseas resolver (a o b):</label>
+                <input type="text" id="inciso10" class="inciso"> <br> <br>
+                <button onclick="ejer10()">Click para el resultado</button>
+                <div id="resultado-container10" style="margin-top: 20px; padding: 5px;    background-color: #e9ecef;    border-radius: 2px;    color: #333;    display: none;">
+                    <p>La respuesta es: <b><span id="res10" style="color: blue;"></span></p></b>
+                </div>
+            </section>
+        </div>
+
+    </div>
+   
+    <script src="sol.js"></script>
+    <footer>
+        <p>© 2025 Mi Sitio Web para resolver problemas</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
